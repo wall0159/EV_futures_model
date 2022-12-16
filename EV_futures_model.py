@@ -259,7 +259,7 @@ with PdfPages("cumulative_emissions.pdf") as export_pdf:
     plt.ylabel('cumulative CO2 emissions from Australian transport (Mt)')
     plt.xlabel('year')
     plt.legend([descs[0], descs[1], descs[-1]])
-    plt.title('cumulative emissions from light motorised transport in Australia under 4 different scenarios')
+    plt.title('cumulative emissions from light motorised transport in Australia under 3 different scenarios')
     # plt.subplot(212)
     # plt.plot(years, [i * distTravPA / 1000000 for i in scn1['totalNumCars']], 'tab:brown')
     # plt.plot(years, [i * distTravPA / 1000000 for i in scn2['totalNumCars']], 'tab:blue')
@@ -267,7 +267,7 @@ with PdfPages("cumulative_emissions.pdf") as export_pdf:
     # plt.plot(years, [i/1000000 for i in scn4['annualDistTrav']], 'tab:green')
     # plt.plot(years, [i * distTravPA / 1000000 for i in scn5['totalNumCars']], 'tab:cyan')
     # plt.legend(descs)
-    plt.title('annual total distance travelled by light motorised transport\nin Australia under 4 different scenarios (million kn)')
+    # plt.title('annual total distance travelled by light motorised transport\nin Australia under 3 different scenarios (million kn)')
     export_pdf.savefig()
 
 # with PdfPages("light_vehicle_total_distance_travelled.pdf") as export_pdf:
